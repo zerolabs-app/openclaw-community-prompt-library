@@ -1,6 +1,6 @@
 # Jeep J-Series Hunter
 
-Find Jeep J-10, J20, Honcho, and other full-size Jeep pickup trucks for sale within approximately 200 miles of ZIP code 98524.
+Find Jeep J-10, J20, Honcho, and other full-size Jeep pickup trucks for sale within approximately 200 miles of ZIP code 98101.
 
 I am primarily interested in running and driving trucks priced under $8,000.
 
