@@ -46,12 +46,22 @@ Improved an existing prompt?
 
 Submit an updated version.
 
+To submit a prompt:
+
+1. Fork this repository.
+2. Add your prompt to the appropriate category.
+3. Submit a Pull Request.
+
 Please include:
 
 * Prompt title
 * Category
 * Description of intended use
 * Example results if available
+
+All submissions are reviewed before being added to the library.
+
+Low-quality, duplicate, spam, promotional, or malicious submissions will be rejected.
 
 ## Prompt Standards
 
