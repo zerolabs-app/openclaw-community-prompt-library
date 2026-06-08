@@ -14,9 +14,11 @@ User Inputs:
 Requirements:
 
 * Round-trip tickets
-* Search all major airlines and publicly available travel booking sources
-* Include nearby departure airports if they provide significantly lower fares
-* Include nearby arrival airports if they provide significantly lower fares
+* Search major airlines and one major public fare source first.
+* Include nearby airports only if the primary-airport search completes successfully and time remains.
+* Do not expand to every nearby airport by default.
+* Stop once 5-10 strong options are found.
+* Prefer completing the report over exhaustive searching.
 * Prefer nonstop flights when available, but include the best connecting options if they offer substantial savings
 
 For each flight option found, provide:
