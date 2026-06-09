@@ -24,6 +24,34 @@ Search public listings from:
 * Motorcycle enthusiast forums
 * Any publicly accessible motorcycle sale sources
 
+* Blocked Source Fallback Rule:
+
+If major marketplace sites block automated access, require sign-in, fail to render, or return unusable pages:
+
+* Do not stop searching.
+* Record the blocked source and reason.
+* Continue searching alternative public sources.
+
+Required fallback sources include:
+
+* Direct motorcycle dealer inventory
+* Direct powersports dealer inventory
+* Yamaha dealer inventory
+* Regional dealer inventory
+* Motorcycle forums and owner groups
+* Classified aggregators
+* Auction sites
+* Search-engine indexed listing pages
+
+If no exact matches are found:
+
+* Expand search radius by 25-mile increments up to 200 miles.
+* Expand model years by plus or minus 2 years if needed.
+* Include closest matching listings.
+* Clearly explain why each closest match is still worth considering.
+
+Returning qualified alternatives is preferred over returning no listings.
+
 Prioritize:
 
 * Running and riding motorcycles
