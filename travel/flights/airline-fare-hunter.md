@@ -38,6 +38,13 @@ For each flight option found, provide:
 
 Rank results from lowest total price to highest total price.
 
+Search Control:
+
+- If a fare source is blocked, login-gated, captcha-gated, rate-limited, or unusable, record the limitation once and move to the next source.
+- Do not repeatedly retry a blocked or unusable source during the same run.
+- Stop broad searching once 5-10 strong options are found or once major airlines plus one public fare source have been checked.
+- Prefer a complete, well-supported report over exhaustive fare hunting.
+
 At the end, provide:
 
 * Cheapest overall option
