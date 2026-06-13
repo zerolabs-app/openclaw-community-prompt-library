@@ -36,7 +36,7 @@ Required fallback sources include:
 
 * Direct motorcycle dealer inventory
 * Direct powersports dealer inventory
-* Yamaha dealer inventory
+* Dealer inventory
 * Regional dealer inventory
 * Motorcycle forums and owner groups
 * Classified aggregators
