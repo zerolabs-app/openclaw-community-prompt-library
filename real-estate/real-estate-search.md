@@ -94,7 +94,7 @@ Generate a final buyer's guide including:
 * Recommended next actions
 * Best overall purchase candidate
 
-If no strong matches are available, provide the closest available matches and explain the tradeoffs.
+If no strong matches are available, provide the closest in-scope matches and explain the tradeoffs.
 
 Common Examples
 
