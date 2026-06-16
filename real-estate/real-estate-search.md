@@ -61,6 +61,27 @@ If no qualifying properties are found:
 
 Do not fill the report with out-of-scope properties.
 
+PROPERTY TYPE RULE
+
+The requested Property Type is mandatory.
+
+Do not substitute different property types unless explicitly requested.
+
+If searching for:
+- land
+- acreage
+- waterfront lots
+- RV lots
+- single family homes
+- multi-family homes
+- commercial property
+
+remain within the requested property type.
+
+If no qualifying properties are found:
+- report that no qualifying properties were found
+- do not substitute a different property type
+
 ---
 
 SEARCH REQUEST
