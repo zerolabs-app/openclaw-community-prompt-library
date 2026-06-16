@@ -1,44 +1,132 @@
-# Real Estate Search
+# OpenClaw Real Estate Search
 
-Research properties matching the requested criteria and identify the most promising opportunities based on price, location, features, and overall value.
+Purpose:
 
-SEARCH-FIRST REQUIREMENTS
+Find real estate matching the requested criteria.
 
-* Search first.
-* Follow Search-First rules.
-* Use the configured search provider.
-* Prefer original listings and official property sources.
-* Gather evidence before analysis.
-* Verify property information when possible.
+Search first.
 
-GEOGRAPHIC SCOPE RULES
+Gather evidence before analysis.
+
+---
+
+SEARCH RULES
+
+- Search before analysis.
+- Follow Search-First rules.
+- Use the configured search provider.
+- Prefer active listings.
+- Prefer original listing sources.
+- Prefer verified property information.
+
+Do not invent:
+
+- listings
+- prices
+- addresses
+- acreage
+- property details
+
+---
+
+GEOGRAPHIC SCOPE RULE
 
 The requested Location is mandatory.
 
-Search only inside the requested location and any radius, county, city, state, lake, neighborhood, or region specified by the user.
+The requested search area is a hard boundary.
 
-Do not expand to other states, distant markets, or nationwide results unless the user explicitly asks for that.
+For land searches:
 
-For real estate and land searches:
+- search only inside the requested location
+- do not expand to other states
+- do not expand nationwide
+- do not substitute different lakes
+- do not substitute different counties
+- do not substitute different cities
+- do not substitute different regions
 
-- stay inside the requested state
-- stay inside the requested region when one is provided
-- do not include properties from other states
-- do not include distant comparison properties as purchase candidates
-- do not rank outside-area properties
+If a city is specified:
 
-If no strong matches are found inside the requested location:
+- remain inside the city when possible
+- expansion is limited to a maximum 25-mile radius
 
-- say that no strong in-scope matches were found
-- provide closest in-scope matches only
-- explain the tradeoffs
-- recommend manual checks or future monitoring
+If a county is specified:
 
-Do not fill the report with out-of-scope properties just because few matches were found.
+- remain inside the county
 
-TASK
+If a lake is specified:
 
-Search for properties matching:
+- remain within the requested lake area
+
+Properties outside the permitted search area must not be:
+
+- ranked
+- recommended
+- selected as purchase candidates
+
+If no qualifying properties are found:
+
+- report that no qualifying in-scope properties were found
+- explain which requirements limited results
+
+Do not fill the report with out-of-scope properties.
+
+---
+
+SOURCE PRIORITY RULE
+
+Prioritize:
+
+- Realtor.com
+- Land.com
+- LandWatch
+- Lands of America
+- Zillow when accessible
+- Redfin when accessible
+- local broker websites
+- county property databases
+- search-engine indexed listing pages
+
+Delay:
+
+- Facebook Marketplace
+- login-required websites
+- anti-bot protected websites
+- JavaScript-only listing pages
+- sources that already failed during the current run
+
+If a source is blocked:
+
+- record the source
+- record the reason
+- continue immediately
+
+Do not repeatedly retry blocked sources.
+
+Candidate listings are higher priority than source coverage.
+
+---
+
+TIMEBOX RULE
+
+Within the first five minutes:
+
+- identify working sources
+- identify blocked sources
+- collect candidate listings
+
+If timeout risk exists:
+
+- save findings immediately
+- create canonical artifacts immediately
+- preserve collected evidence
+- create a partial buyer guide
+
+A partial result is preferred over a timeout without artifacts.
+
+---
+
+SEARCH REQUEST
 
 Property Type:
 
@@ -56,55 +144,53 @@ Requirements:
 
 [REQUIREMENTS]
 
-For each property found provide:
+---
 
-* Property address
-* Asking price
-* Property type
-* Lot size
-* Building size
-* Bedrooms and bathrooms (if applicable)
-* Listing source
-* Listing link
-* Key features
-* Potential concerns
+LISTING DATA
+
+For each qualifying property provide:
+
+- Property address
+- Asking price
+- Property type
+- Lot size
+- Building size when applicable
+- Bedrooms and bathrooms when applicable
+- Listing source
+- Listing link
+- Key features
+- Potential concerns
+
+---
 
 ANALYSIS
 
 Identify:
 
-* Best overall value
-* Best budget option
-* Best premium option
-* Properties with unique advantages
-* Potential investment opportunities
-* Properties that may be overpriced
-* Common market trends
+- Best overall value
+- Best budget option
+- Best premium option
+- Best investment opportunity
+- Potential concerns
+- Market observations
+- Properties that appear overpriced
 
-OUTPUT
+---
 
-Rank properties from most promising to least promising.
+OUTPUT RULES
 
-Generate a final buyer's guide including:
+Rank qualifying properties from most promising to least promising.
 
-* Top recommendations
-* Market observations
-* Strengths and weaknesses of each property
-* Potential risks
-* Recommended next actions
-* Best overall purchase candidate
+Generate:
 
-If no strong matches are available, provide the closest in-scope matches and explain the tradeoffs.
+- Top recommendations
+- Strengths and weaknesses
+- Potential risks
+- Recommended next actions
+- Best overall purchase candidate
 
-Common Examples
+If no qualifying in-scope properties exist:
 
-* Residential homes
-* RV lots
-* Waterfront property
-* Vacant land
-* Commercial property
-* Investment property
-* Multi-family property
-* Beachfront lots
-* Rural acreage
-* Recreational land
+- report no qualifying properties found
+- provide evidence of the search performed
+- explain the limiting factors
