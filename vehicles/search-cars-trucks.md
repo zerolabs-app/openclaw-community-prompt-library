@@ -1,52 +1,113 @@
 # Vehicle Hunter
 
+Purpose
+
 Find vehicles matching the criteria specified by the user.
 
-User Inputs:
+User Inputs
 
-* Vehicle Make: [USER INPUT]
-* Vehicle Model: [USER INPUT]
-* Vehicle Years or Year Range: [USER INPUT]
-* Maximum Distance from ZIP Code: [USER INPUT]
-* ZIP Code: [USER INPUT]
-* Maximum Budget: [USER INPUT]
-* Preferred Engine(s): [USER INPUT]
-* Required Features or Options: [USER INPUT]
+- Vehicle Make: [USER INPUT]
+- Vehicle Model: [USER INPUT]
+- Vehicle Years or Year Range: [USER INPUT]
+- Maximum Distance from ZIP Code: [USER INPUT]
+- ZIP Code: [USER INPUT]
+- Maximum Budget: [USER INPUT]
+- Preferred Engine(s): [USER INPUT]
+- Required Features or Options: [USER INPUT]
+- Preferred Condition: [USER INPUT]
 
-Search public listings from:
+Search Sources
 
-* Classified sites
-* Collector vehicle sites
-* Auction listings
-* Dealer inventory
-* Marketplace-style public listings
-* Any publicly accessible vehicle sale sources
+Search publicly accessible vehicle listings from:
 
-Prioritize:
+- Classified sites
+- Collector vehicle sites
+- Auction listings
+- Dealer inventory
+- Marketplace-style public listings
+- Vehicle enthusiast forums
+- Search-engine indexed vehicle listings
+- Any publicly accessible vehicle sale sources
 
-* Running and driving vehicles
-* Vehicles within budget
-* Vehicles matching the preferred engine, options, and condition requirements
-* Well-maintained examples with complete descriptions and photos
+Blocked Source Fallback Rule
 
-For each promising vehicle found, provide:
+If a source:
 
-* Asking price
-* Location
-* Year, make, and model
-* Engine and transmission (if known)
-* Mileage (if known)
-* Running/driving status
-* Overall condition
-* Link to the listing
-* Notes explaining why the vehicle may be a good purchase
+- blocks automated access
+- requires sign-in
+- fails to render
+- returns unusable pages
 
-Rank all vehicles from most promising to least promising.
+then:
 
-If no strong matches are available, provide the closest matches found and explain why they may still be worth considering.
+- Record the blocked source.
+- Record the reason.
+- Continue searching.
+- Do not stop searching because a source is unavailable.
 
-Generate a final buyer summary identifying:
+Search Expansion Rules
 
+If no exact matches are found:
+
+- Expand search radius by 25-mile increments up to 200 miles.
+- Expand model years by plus or minus 2 years if needed.
+- Include closest matching vehicles.
+- Explain why each alternative may still be worth considering.
+
+Returning qualified alternatives is preferred over returning no results.
+
+Priorities
+
+- Running and driving vehicles
+- Vehicles within budget
+- Vehicles matching preferred engine requirements
+- Vehicles matching required options and features
+- Well-maintained examples
+- Listings with complete descriptions and photos
+- Listings with mileage and condition information
+
+Required Listing Information
+
+For each promising vehicle found provide:
+
+- Asking price
+- Location
+- Year
+- Make
+- Model
+- Engine
+- Transmission if known
+- Mileage if known
+- Running or driving status
+- Overall condition
+- Listing source
+- Listing link
+- Notes explaining why the vehicle may be a good purchase
+
+Ranking Rules
+
+- Rank all vehicles from most promising to least promising.
+- If no strong matches exist, rank the closest alternatives.
+- Explain why each alternative may still be worth considering.
+
+Final Buyer Summary
+
+Identify:
+
+- Best Overall Purchase Opportunity
+- Best Value Option
+- Lowest-Priced Running and Driving Option
+- Best Long-Term Ownership Candidate
+- Listings Worth Contacting First
+
+Market Summary
+
+Summarize:
+
+- pricing trends observed
+- availability within the search area
+- common vehicle conditions observed
+- notable findings discovered during the search
 * Best overall purchase opportunity
 * Best value option
 * Lowest-priced running/driving option
