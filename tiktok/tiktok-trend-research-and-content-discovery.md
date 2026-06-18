@@ -1,76 +1,180 @@
-# TikTok Trend Research and Content Discovery
+# TikTok Trend Hunter
 
 Research TikTok trends, creators, viral content, audience interests, and growth opportunities.
 
-SEARCH-FIRST REQUIREMENTS
+User Inputs
 
-* Search first.
-* Follow Search-First rules.
-* Use the configured search provider.
-* Gather evidence before analysis.
-* Prefer original creator sources when available.
-* Verify information when practical.
+- Topic or Niche: [USER INPUT]
+- Target Country or Region: [USER INPUT]
+- Time Period: [USER INPUT]
+- Content Type: [USER INPUT]
+- Audience Type: [USER INPUT]
+- Creator Size: [USER INPUT]
+- Minimum Followers: [USER INPUT]
+- Maximum Followers: [USER INPUT]
+- Video Length Preference: [USER INPUT]
+- Research Goal: [USER INPUT]
 
-TASK
+Research Goals
 
-Research the following TikTok niche or topic:
+Examples include:
 
-[TOPIC]
+- Trend Discovery
+- Competitor Research
+- Viral Content Research
+- Content Idea Generation
+- Creator Discovery
+- Audience Research
+- Emerging Trend Monitoring
+- Posting Strategy Research
 
-Search for:
+Search Sources
 
-* Trending videos
-* Viral creators
-* Popular content formats
-* Audience interests
-* Emerging trends
-* Fast-growing accounts
+Search publicly accessible TikTok content from:
 
-For each creator, trend, or video identified provide:
+- Creator profiles
+- Trending videos
+- Hashtag pages
+- Trend tracking resources
+- Search-engine indexed TikTok content
+- Public creator analytics when available
 
-* Creator name
-* Video or profile link
-* Content category
-* Estimated audience
-* Engagement indicators
-* Why it appears successful
+Search Rules
 
-ANALYSIS
+- Search first.
+- Gather evidence before analysis.
+- Prefer original creator sources.
+- Prefer recently published content.
+- Verify information when practical.
+- Do not invent creators.
+- Do not invent engagement metrics.
+- Do not invent trends.
+
+Blocked Source Fallback Rule
+
+If a source:
+
+- blocks automated access
+- requires sign-in
+- fails to render
+- returns unusable pages
+
+then:
+
+- Record the blocked source.
+- Record the reason.
+- Continue searching.
+- Do not stop searching because a source is unavailable.
+
+Required fallback sources include:
+
+- Search-engine indexed TikTok pages
+- Public creator profiles
+- Public trend tracking resources
+- Public creator analytics resources
+
+Time Period Rule
+
+The requested Time Period is mandatory.
+
+Examples include:
+
+- Last 24 Hours
+- Last 7 Days
+- Last 30 Days
+- Last 90 Days
+
+Prioritize content published during the requested period.
+
+Creator Size Rule
+
+If creator size is specified:
+
+- Prioritize creators within the requested range.
+- Clearly identify out-of-range creators.
+- Explain why they were included.
+
+Required Creator Information
+
+For each creator provide:
+
+- Creator name
+- Profile link
+- Topic or niche
+- Follower count when available
+- Estimated audience size
+- Engagement indicators
+- Posting frequency when available
+- Notes explaining why the creator appears successful
+
+Required Video Information
+
+For each video provide:
+
+- Creator name
+- Video link
+- Topic
+- Video length
+- Hook style
+- Content format
+- Engagement indicators
+- Notes explaining why the video appears successful
+
+Trend Analysis
 
 Identify:
 
-* Common content patterns
-* Popular hooks
-* Video structures
-* Recurring themes
-* Audience interests
-* Growth opportunities
-* Underserved topics
-* Emerging trends
+- Common hooks
+- Common video structures
+- Common visual styles
+- Common themes
+- Recurring story formats
+- Audience interests
+- Emerging trends
+- Fast-growing topics
 
-OUTPUT
+Content Opportunities
 
-Generate a report containing:
+Identify:
 
-* Top creators
-* Top trending videos
-* Viral content patterns
-* Content opportunities
-* Recommended content ideas
-* Suggested posting strategy
-* Potential future trends to monitor
+- Underserved topics
+- Low-competition opportunities
+- High-engagement content formats
+- Potential content series
+- Viral opportunity areas
 
-Common Examples
+Output
 
-* AI-generated content
-* History and educational content
-* Business and entrepreneurship
-* Travel content
-* Food content
-* Gaming content
-* Comedy content
-* Lifestyle content
-* Influencer research
-* Trend monitoring
+Generate:
 
-For trend-monitoring tasks, prioritize content published within the requested time period and identify patterns that may indicate emerging viral opportunities.
+- Top creators
+- Top videos
+- Viral content patterns
+- Audience insights
+- Content opportunities
+- Recommended content ideas
+- Suggested posting strategy
+- Future trends to monitor
+
+Final Summary
+
+Identify:
+
+- Most Promising Trend
+- Fastest Growing Creator
+- Best Content Opportunity
+- Best Viral Pattern
+- Most Underserved Topic
+- Most Important Trend To Monitor
+
+No Results Rule
+
+If insufficient qualifying content is found:
+
+- Report the limitation.
+- Provide evidence of the search performed.
+- Explain the limiting factors.
+- Do not invent creators.
+- Do not invent videos.
+- Do not invent engagement metrics.
+- Do not invent trends.
