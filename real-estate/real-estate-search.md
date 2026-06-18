@@ -1,141 +1,184 @@
-# OpenClaw Real Estate Search
+# Real Estate Hunter
 
-Purpose:
+Find real estate matching the criteria specified by the user.
 
-Find real estate matching the requested criteria.
+User Inputs
 
-Search first.
+- Property Type: [USER INPUT]
+- Location: [USER INPUT]
+- Maximum Distance: [USER INPUT]
+- Maximum Budget: [USER INPUT]
+- Minimum Bedrooms: [USER INPUT]
+- Minimum Bathrooms: [USER INPUT]
+- Minimum Square Footage: [USER INPUT]
+- Minimum Lot Size: [USER INPUT]
+- Minimum Acres: [USER INPUT]
+- Maximum HOA Fee: [USER INPUT]
+- Year Built Range: [USER INPUT]
+- Waterfront Required: [YES / NO]
+- Water View Required: [YES / NO]
+- Pool Required: [YES / NO]
+- Garage Spaces Required: [USER INPUT]
+- RV Parking Required: [YES / NO]
+- Property Condition: [USER INPUT]
+- Required Features: [USER INPUT]
+- Preferred Features: [USER INPUT]
 
-Gather evidence before analysis.
+Search Sources
 
----
+Search active listings from:
 
-SEARCH RULES
-- Search before analysis.
-- Follow Search-First rules.
-- Use the configured search provider.
-- Prefer active listings.
-- Prefer original listing sources.
-- Prefer verified property information.
+- Realtor websites
+- Brokerage websites
+- MLS-backed listing pages
+- Real estate listing aggregators
+- Search-engine indexed property listings
+- County property resources when applicable
+- Any publicly accessible real estate listing sources
 
-Do not invent:
-- listings
-- prices
-- addresses
-- acreage
-- property details
+Blocked Source Fallback Rule
 
----
+If a source:
 
-GEOGRAPHIC SCOPE RULE
+- blocks automated access
+- requires sign-in
+- fails to render
+- returns unusable pages
 
-The requested Location is mandatory.
+then:
 
-The requested search area is a hard boundary.
+- Record the blocked source.
+- Record the reason.
+- Continue searching.
+- Do not stop searching because a source is unavailable.
+
+Required fallback sources include:
+
+- Brokerage inventory
+- MLS-backed listing pages
+- Realtor inventory
+- County property resources
+- Search-engine indexed listing pages
+
+Geographic Scope Rule
+
+The requested location is mandatory.
 
 For real estate searches:
-- search only inside the requested location
-- do not expand to other states
-- do not expand nationwide
-- do not substitute different lakes
-- do not substitute different counties
-- do not substitute different cities
-- do not substitute different regions
+
+- Search only inside the requested location.
+- Do not substitute different cities.
+- Do not substitute different counties.
+- Do not substitute different lakes.
+- Do not substitute different regions.
+- Do not expand to other states.
+- Do not expand nationwide.
 
 If a city is specified:
-- remain inside the city when possible
-- expansion is limited to a maximum 25-mile radius
-- do not expand beyond 25 miles unless explicitly requested
+
+- Remain inside the city when possible.
+- Expansion is limited to the requested Maximum Distance.
+- Do not expand beyond the requested Maximum Distance.
 
 If a county is specified:
-- remain inside the county
+
+- Remain inside the county.
 
 Properties outside the permitted search area must not be:
-- ranked
-- recommended
-- selected as purchase candidates
 
-If no qualifying properties are found:
-- report that no qualifying in-scope properties were found
-- explain which requirements limited results
+- Ranked.
+- Recommended.
+- Selected as purchase candidates.
 
-Do not fill the report with out-of-scope properties.
+Property Type Rule
 
-PROPERTY TYPE RULE
-
-The requested Property Type is mandatory.
+The requested property type is mandatory.
 
 Do not substitute different property types unless explicitly requested.
 
 If searching for:
-- land
-- acreage
-- waterfront lots
+
+- Single-family homes
+- Multi-family homes
+- Condominiums
+- Townhomes
+- Manufactured homes
+- Land
+- Acreage
+- Waterfront lots
 - RV lots
-- single family homes
-- multi-family homes
-- commercial property
+- Commercial property
 
 remain within the requested property type.
 
 If no qualifying properties are found:
-- report that no qualifying properties were found
-- do not substitute a different property type
 
----
+- Report that no qualifying properties were found.
+- Do not substitute a different property type.
 
-SEARCH REQUEST
+Listing Source Priority
 
-Property Type: [PROPERTY TYPE]
+Prefer:
 
-Location: [LOCATION]
+- Original listing source
+- Brokerage listing
+- MLS-backed listing
+- Verified property source
 
-Budget: [BUDGET]
+Avoid duplicate listings when possible.
 
-Requirements: [REQUIREMENTS] 
-
----
-
-LISTING DATA
+Required Listing Information
 
 For each qualifying property provide:
+
 - Property address
 - Asking price
 - Property type
+- Bedrooms
+- Bathrooms
+- Building size
 - Lot size
-- Building size when applicable
-- Bedrooms and bathrooms when applicable
+- Acreage when available
+- Year built
+- HOA fee when available
 - Listing source
 - Listing link
 - Key features
+- Notes explaining why the property may be a good purchase
 
----
+Ranking Rules
 
-ANALYSIS
+- Rank all qualifying properties from most promising to least promising.
+- If no strong matches exist, rank the closest alternatives.
+- Explain why each alternative may still be worth considering.
+
+Final Buyer Summary
 
 Identify:
-- Best overall value
-- Best budget option
-- Best premium option
-- Best investment opportunity
-- Potential concerns
-- Market observations
-- Properties that appear overpriced
 
----
+- Best Overall Value
+- Best Budget Option
+- Best Premium Option
+- Best Investment Opportunity
+- Best Long-Term Ownership Candidate
+- Properties Worth Contacting First
 
-OUTPUT RULES
+Market Summary
 
-Rank qualifying properties from most promising to least promising.
+Summarize:
 
-Generate:
-- Top recommendations
-- Strengths and weaknesses
-- Potential risks
-- Recommended next actions
-- Best overall purchase candidate
+- Pricing trends observed
+- Inventory availability
+- Common property characteristics
+- Notable findings discovered during the search
+
+No Results Rule
 
 If no qualifying in-scope properties exist:
-- report no qualifying properties found
-- provide evidence of the search performed
-- explain the limiting factors
+
+- Report that no qualifying properties were found.
+- Provide evidence of the search performed.
+- Explain the limiting factors.
+- Do not substitute different locations.
+- Do not substitute different property types.
+- Do not fill the report with out-of-scope properties.
