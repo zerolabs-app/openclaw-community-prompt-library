@@ -1,24 +1,27 @@
 # Search-First Methodology
 
-Search-First is the recommended research workflow for OpenClaw.
+Search-First is the standard OpenClaw research workflow.
 
-The goal is simple:
+Purpose
 
 Gather evidence first.
+
 Analyze second.
 
-Many research errors occur when conclusions are generated before sufficient evidence is collected. Search-First helps reduce hallucinations, improve accuracy, and create more reliable results.
+Research should be driven by evidence, not assumptions.
 
-## Core Principles
+Core Principles
 
-1. Search first.
-2. Gather evidence.
-3. Verify information when practical.
-4. Prefer original sources.
-5. Analyze after evidence collection.
-6. Clearly distinguish facts from assumptions.
+- Search first.
+- Gather evidence.
+- Verify information when practical.
+- Prefer original sources.
+- Analyze after evidence collection.
+- Clearly distinguish facts from assumptions.
+- Record limitations and blocked sources.
+- Prefer qualified alternatives over no results when appropriate.
 
-## Preferred Source Order
+Preferred Source Order
 
 1. Official source
 2. Original listing
@@ -27,9 +30,9 @@ Many research errors occur when conclusions are generated before sufficient evid
 5. Public records
 6. News sources
 7. Search engine results
-8. AI analysis
+8. Analysis and interpretation
 
-## Search Provider Preference
+Search Provider Rules
 
 Follow:
 
@@ -37,38 +40,106 @@ mission-control/resources/search-defaults.md
 
 for provider selection and search configuration.
 
-## Common Search Categories
+Common Search Categories
 
-* Vehicles
-* Real Estate
-* Products
-* YouTube
-* TikTok
-* News
-* Local Business
-* Public Directories
-* Travel
-* Social Media Research
+- Vehicles
+- Motorcycles
+- Real Estate
+- Products
+- Flights and Travel
+- Hotels
+- Local Business
+- Public Directories
+- YouTube
+- TikTok
+- Instagram
+- News
+- Social Media Research
 
-## Search-First Workflow
+Search Workflow
 
-Step 1:
+Step 1
+
 Search for relevant sources.
 
-Step 2:
-Collect evidence and links.
+Step 2
 
-Step 3:
+Collect evidence.
+
+Record:
+
+- source
+- link
+- title when available
+- relevant findings
+
+Step 3
+
+Verify information when practical.
+
+Step 4
+
 Identify patterns and important findings.
 
-Step 4:
-Analyze the information.
+Step 5
 
-Step 5:
-Generate recommendations and conclusions.
+Analyze the evidence.
 
-## Goal
+Step 6
 
-Use research to drive conclusions.
+Generate conclusions, recommendations, and rankings.
 
-Do not use conclusions to drive research.
+Blocked Source Rule
+
+If a source:
+
+- blocks automated access
+- requires sign-in
+- fails to render
+- returns unusable pages
+
+then:
+
+- Record the blocked source.
+- Record the reason.
+- Continue searching.
+- Use alternative public sources.
+- Do not stop searching because a source is unavailable.
+
+No Results Rule
+
+If no exact matches are found:
+
+- Report the limitation.
+- Explain the limiting factors.
+- Provide evidence of the search performed.
+- Return qualified alternatives when appropriate.
+- Clearly explain why alternatives were included.
+
+Evidence Rule
+
+Research should support conclusions.
+
+Conclusions should not drive research.
+
+Do not invent:
+
+- listings
+- businesses
+- products
+- creators
+- properties
+- vehicles
+- flights
+- news stories
+- prices
+- statistics
+- engagement metrics
+
+Goal
+
+Use evidence to drive conclusions.
+
+Use research to support recommendations.
+
+Provide transparent, traceable results whenever possible.
