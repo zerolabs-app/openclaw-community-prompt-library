@@ -27,14 +27,19 @@ These prompts are designed to help OpenClaw perform ongoing work such as:
 
 ## Categories
 
-* Vehicles & Classifieds
-* Real Estate
-* Jobs & Careers
-* Social Media Research
-* Business Intelligence
-* Finance & Markets
-* AI & Technology
-* Travel & Events
+* [Finance & Markets](finance-markets/) — yields, rates, options positioning, market monitoring
+* [Local Business](local-business/) — finding and evaluating local businesses
+* [News](news/) — topic, company, and industry monitoring
+* [Products](products/) — retail research/comparison and wholesale sourcing
+* [Public Directories](public-directories/) — public records, registries, official listings
+* [Real Estate](real-estate/) — property search and monitoring
+* [Vehicles](vehicles/) — cars, trucks, and motorcycles
+* [Travel](travel/) — flights and fare tracking
+* [Instagram](instagram/) — research, trends, and content ideas
+* [TikTok](tiktok/) — trend and viral content research
+* [Snapchat](snapchat/) — trend and creator research
+* [YouTube](youtube/) — channel and content research
+* [Search-First Methodology](search-first/) — the research methodology behind these prompts
 
 ## Contributing
 
