@@ -74,3 +74,10 @@ Notes
 
 - The tailored resume should stay accurate to the user's real experience — it reorganizes and rewords, it does not fabricate.
 - Recommend the user does a final read-through before submitting, same as they would with any resume.
+
+
+Output Formatting Rule
+
+- Do not use a standalone line of three or more dashes (---) anywhere in the report, including between individual entries.
+- Separate multiple entries using a blank line followed by a heading (e.g. "### 2)") instead of a dash divider.
+- This applies to the entire report.

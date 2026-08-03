@@ -182,3 +182,10 @@ If no qualifying in-scope properties exist:
 - Do not substitute different locations.
 - Do not substitute different property types.
 - Do not fill the report with out-of-scope properties.
+
+
+Output Formatting Rule
+
+- Do not use a standalone line of three or more dashes (---) anywhere in the report, including between individual entries.
+- Separate multiple entries using a blank line followed by a heading (e.g. "### 2)") instead of a dash divider.
+- This applies to the entire report.

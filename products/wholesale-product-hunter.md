@@ -118,3 +118,10 @@ If no qualifying wholesale products are found:
 - Explain the limiting factors.
 - Provide closest alternatives.
 - Do not invent products, prices, MOQ, reviews, or supplier terms.
+
+
+Output Formatting Rule
+
+- Do not use a standalone line of three or more dashes (---) anywhere in the report, including between individual entries.
+- Separate multiple entries using a blank line followed by a heading (e.g. "### 2)") instead of a dash divider.
+- This applies to the entire report.
