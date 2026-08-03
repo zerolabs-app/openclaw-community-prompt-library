@@ -48,7 +48,7 @@ For Each Matching Job Found
 1. Confirm the job matches the title, location, and salary criteria.
 2. Compare the job description against the user's base resume.
 3. Identify the 3-5 most relevant skills/experiences to highlight for this specific job.
-4. Draft a tailored version of the resume: reorder or reword bullet points to match the job description's language, without inventing experience the user doesn't have.
+4. Draft a tailored version of the resume: reorder or reword bullet points to match the job description's language. Every skill, keyword, and claim in the tailored version must trace back to something explicitly stated in the base resume — do not add skills, tools, certifications, or qualities (e.g. "customer service," "project coordination," "quality assurance") that are not already present in the base resume, even if they seem like a natural fit for the role.
 5. Keep formatting simple and ATS-friendly (plain text or simple structure, no complex tables/graphics).
 
 Required Output Per Job
