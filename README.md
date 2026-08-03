@@ -41,6 +41,7 @@ These prompts are built for OpenClaw on Windows. Don't have it yet? Get it here:
 * [Real Estate](real-estate/) — property search and monitoring
 * [Vehicles](vehicles/) — cars, trucks, and motorcycles
 * [Travel](travel/) — flights and fare tracking
+* [Jobs & Careers](jobs-careers/) — job search and resume tailoring
 * [Instagram](instagram/) — research, trends, and content ideas
 * [TikTok](tiktok/) — trend and viral content research
 * [Snapchat](snapchat/) — trend and creator research
@@ -49,26 +50,9 @@ These prompts are built for OpenClaw on Windows. Don't have it yet? Get it here:
 
 ## Contributing
 
-Found a prompt that works well?
+Found a prompt that works well? Improved an existing one? Share it.
 
-Submit it.
-
-Improved an existing prompt?
-
-Submit an updated version.
-
-To submit a prompt:
-
-1. Fork this repository.
-2. Add your prompt to the appropriate category.
-3. Submit a Pull Request.
-
-Please include:
-
-* Prompt title
-* Category
-* Description of intended use
-* Example results if available
+**To submit a prompt:** fill out the [Submit a Prompt](SUBMIT-A-PROMPT.md) template and email it to zerolabs.app@gmail.com with the subject line "Prompt Submission." No GitHub account or technical experience needed — just fill in the blanks and send it in.
 
 All submissions are reviewed before being added to the library.
 
