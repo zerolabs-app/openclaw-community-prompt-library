@@ -9,9 +9,16 @@ User Inputs
 - Job Titles or Keywords: [USER INPUT]
 - Location or Remote Preference: [USER INPUT]
 - Minimum Salary (if known): [USER INPUT]
-- Experience Level: [USER INPUT]
-- Base Resume: [USER INPUT — paste resume text or attach file]
+- Years of Experience: [USER INPUT]
+- Seniority Level (entry / mid / senior / lead / management): [USER INPUT]
+- Relevant Certifications or Licenses: [USER INPUT]
 - Job Boards to Prioritize: [USER INPUT — e.g. LinkedIn, Indeed, company career pages]
+
+Base Resume
+
+Paste your full resume text below. Include your work history, skills, and any certifications — this is what each tailored version will be built from.
+
+[USER INPUT]
 
 Search Sources
 
