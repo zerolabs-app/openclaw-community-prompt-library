@@ -10,6 +10,7 @@ User Inputs
 - Return Date: [USER INPUT]
 - Number of Adult Passengers: [USER INPUT]
 - Number of Child Passengers: [USER INPUT]
+- Child Passengers Ages (5,7,15...):[USER INPUT]
 - Number of Infant Passengers: [USER INPUT]
 - Preferred Cabin Class: [USER INPUT]
 - Nonstop Required: [YES / NO]
