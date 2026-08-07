@@ -137,6 +137,18 @@ Summarize:
 * Any notable trends in pricing or availability
 
 
+
+Final Verification Step
+
+Immediately before finalizing the result, re-check the top listing's source link one more time.
+
+Confirm whether the listing is still active and the price still matches what was found earlier in the run.
+
+- If it matches, note "confirmed at [time]" next to the top result.
+- If it has changed or the listing is no longer available, note "changed since first seen - verify before acting" and update the figure if a new one is visible.
+- Only re-check the single top-ranked result this way. Do not re-check every option - that defeats the purpose of a lightweight verification step.
+- If the re-check source is blocked, rate-limited, or fails to load, note that the re-check could not be completed rather than assuming the original figure still holds.
+
 Output Formatting Rule
 
 - Do not use a standalone line of three or more dashes (---) anywhere in the report, including between individual entries.
